@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/styles.css" >
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header hidden">
       <div class="container header-container">
         <nav class="header-nav">
           <!-- Logo -->
@@ -55,11 +55,17 @@
             </li>
           </ul>
         </address>
+        <button class="manu-btn" type="button">
+          <svg class="menu-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
+      <div class="mob-menu"></div>
     </header>
     <main>
       <!-- Section-0 Welcome scroll banner -->
-      <section class="welcome-section">
+      <section class="welcome-section hidden">
         <div class="container">
           <h1 class="main-header">Effective Solutions for Your Business</h1>
           <button class="button" type="button" data-modal-open>
@@ -68,7 +74,7 @@
         </div>
       </section>
       <!-- Section-1 Features list-->
-      <section class="features">
+      <section class="features hidden">
         <div class="container">
           <h2 class="visually-hidden">Webstudio Features</h2>
           <ul class="features-list">
@@ -131,6 +137,10 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="
+                  ./images/team/team-1@2x-min.jpg 2x,
+                  ./images/team/team-1-min.jpg    1x
+                "
                 src="./images/mark.jpg"
                 alt="Mark Guerrero photo"
                 width="264"
@@ -174,6 +184,10 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="
+                  ./images/team/team-2@2x-min.jpg 2x,
+                  ./images/team/team-2-min.jpg    1x
+                "
                 src="./images/tom.jpg"
                 alt="Tom Ford photo"
                 width="264"
@@ -217,6 +231,10 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="
+                  ./images/team/team-3@2x-min.jpg 2x,
+                  ./images/team/team-3-min.jpg    1x
+                "
                 src="./images/camila.jpg"
                 alt="Camila Garcia photo"
                 width="264"
@@ -260,6 +278,10 @@
             <li class="team-item">
               <img
                 class="team-img"
+                srcset="
+                  ./images/team/team-4@2x-min.jpg 2x,
+                  ./images/team/team-4-min.jpg    1x
+                "
                 src="./images/daniel.jpg"
                 alt="Daniel Wilson photo"
                 width="264"
@@ -304,7 +326,7 @@
         </div>
       </section>
       <!-- Section-3 Portfolio -->
-      <section class="portfolio">
+      <section class="portfolio hidden">
         <div class="container">
           <h2 class="portfolio-header">Our Portfolio</h2>
           <ul class="potfolio-list">
@@ -433,7 +455,7 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="container container-footer">
         <!-- Logo -->
         <div class="footer-right-part">
@@ -500,7 +522,7 @@
       </div>
     </footer>
     <!-- Modal window layer -->
-    <div class="overlay" data-modal>
+    <div class="overlay hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
