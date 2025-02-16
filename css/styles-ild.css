@@ -405,7 +405,7 @@ address {
   align-items: baseline;
 }
 
-.footer-right-part {
+.footer-left-part {
   margin-right: 120px;
 }
 .footer-logo {
@@ -528,6 +528,8 @@ address {
   fill: #fff;
 }
 
+/* <!-- Modal window layer --> */
+
 .overlay {
   position: fixed;
   top: 0;
@@ -636,7 +638,7 @@ address {
   padding-left: 38px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #2e2f42;
   background-color: inherit;
