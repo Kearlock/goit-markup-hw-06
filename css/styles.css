@@ -57,9 +57,6 @@ img {
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #434455;
   background-color: #ffffff;
 }
@@ -359,6 +356,7 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .features-text {
@@ -445,10 +443,22 @@ body {
 }
 
 .team-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
   margin-bottom: 8px;
 }
 
 .team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #434455;
   margin-bottom: 8px;
 }
 
@@ -506,6 +516,12 @@ body {
 }
 
 .portfolio-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
   text-align: center;
   margin-bottom: 72px;
 }
@@ -759,16 +775,21 @@ body {
 }
 
 @media screen and (min-width: 1158px) {
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
   .container-footer {
+    justify-content: space-between;
     padding-left: 15px;
   }
 
   .social-media {
-    margin-left: 120px;
+    /* margin-left: 120px; */
   }
 
   .email-subscribe-block {
-    margin-left: auto;
+    /* margin-left: auto; */
   }
 }
 
@@ -866,7 +887,7 @@ body {
   margin-top: auto;
   gap: 24px;
 }
-.mob-cont-item {
+.mob-cont-item:not(:first-child) {
   margin-top: 24px;
 }
 .mob-cont-link {
